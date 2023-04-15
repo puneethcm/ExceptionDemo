@@ -28,12 +28,12 @@ namespace ExceptionDemo
                 }
                 else
                 {
-                    throw new Exception("The Enter Age should more than 0");
+                    throw new CustomException("The Enter Age should more than 0", CustomException.ExceptionTypes.NULL);
                 }
             }
-            catch(Exception ex)
+            catch (Exception e)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine(e.Message);
             }
         }
 	}
